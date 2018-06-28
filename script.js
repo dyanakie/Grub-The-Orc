@@ -12,6 +12,8 @@ $('.selectable').click(function(){
    // $('#description').html($(this).attr('alt'));
 });
 
+//commit test
+
 // QUIZ 1
 
 $('#warrior').click(function(){
