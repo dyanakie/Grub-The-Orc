@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylePics.css">
+    <link rel="stylesheet" href="styleButtons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+        <body>
+        
+                <ul id="nav">
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#overview">Reveal</a></li>
+                        <li class="dropdown">
+                          <a href="#picture" class="dropbtn">Grub Properties</a>
+                          <div class="dropdown-content">
+                            <a href="#picture">Grub Picture</a>
+                            <a href="#">Link 2</a>
+                            <a href="#quiz">Quiz</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <div class="intro" id="intro">
+                        <br>
+                      <h1>Welcome to Grub the Orc Webpage</h1>
+                      <img src="orc1.jpg" height="350">
+
+                      <p class="textLeft">Dear Traveler thank you for coming to Grub's aid.You see Grub is 
+                        battle-hardened and bloodlusty.All around a great orc.But its time for elections and Grub is trying to unite the orcish
+                        camps for first time in history.He may become the first orcish king in living memory!
+                        But he is pretty uneducated, as you would expect from an orc.<strong>You have to
+                        help him become Chieftain of Chieftains.</strong> Because he is applying for such an important position, he must present
+                        himself <strong>as strong and terrible, as he can</strong> in order to get chosen.But in life every choice impacts you in
+                        unpredictable ways and past decisions can help you win or lose voters very easily.Help him make the right choices.
+                      </p>
+                      <p class="textLeft">
+                        You can navigate to different parts of his history and decide how his story unfolds.Once you are done you will be
+                        able to see the result.Be careful,
+                        as every decision you make, changes his <strong>Character </strong>,<strong>Terrifying Rating</strong> and <strong>Prestige
+                        </strong> which will decide if he will be taken or not.
+                      </p>
+                      <p>Scroll down</p>
+
+                      </div>
+                      
+
+
+                  
+<br><br><br><br>
+<hr>
+<div id="picture">
+  <br><br>
+  <h2>Here you must choose Grub's picture:</h2>
+
+
+  <span><img id='chosenOne' src="orc1.jpg" height="360"></span>
+
+  <p><img src="orc1.jpg" class="selectable"  width="120">
+    <img src="orc2.jpg" class="selectable" width="120">
+    <img src="orc3.jpg" class="selectable" width="120">
+    <img src="orc4.jpg" class="selectable" width="120"></p>
+    <p><img src="orc5.jpg" class="selectable" width="120">
+      <img src="orc6.jpg" class="selectable" width="120">
+      <img src="orc7.jpg" class="selectable" width="120">
+      <img src="orc8.jpg" class="selectable" width="120">
+      <img src="orc9.jpg" class="selectable" width="120"></p>
+
+
+
+  <!-- <div class="row"> 
+      <div class="column">
+        <button>Poor family</button>
+        <button>Rich Family</button>
+        
+      </div>
+      <div class="column">
+        <button>Whatever</button>
+        <button>aksdasd</button>
+      
+        
+      </div>  
+      <div class="column">
+        <img src="orc7.jpg" width="220">
+        <img src="orc8.jpg" width="220">
+        <img src="orc9.jpg" width="220">
+        
+    </div>
+
+</div> -->
+
+</div>
+<br><br><br><br><br>
+
+<div id="quiz">
+  <br><br>
+  <h1>Quiz Section</h1>
+<p>Here you will have to react to few situations, throughout Grub's life.Based on the response his Character will be determined.
+  <strong>This is very important part.Think carefully!</strong>
+</p>
+<br>
+<hr>
+<p>Situation 1: "Baby"</p>
+<img src="quizPics/baby.jpg" class="center">
+
+<p>You are born in a camp near the border.In Orcish society usually little orcs are teached
+  their parents trade.Warrios are fierce fighters.Bone Crushers are special berserkers who go naked into
+  battle with huge clubs or axes.Hunters are skilled in bows and crossbows.Chieftains
+  are little more smart then the rest and are born to rule.</p>
+  <p>Tell me in what family are you born:</p>
+
+<table>
+    <tr>
+      <td><button id="warrior">Warriors</button></td>
+      <td><button id="chieftain">Chieftains</button></td>
+    </tr>
+    <tr>
+      <td><button id="boneCrusher">Bone Crushers</button></td>
+      <td><button id="hunter">Hunters</button></td>
+    </tr>
+</table>
+
+<p id="answer1">Answer: </p>
+
+<br><br><br><br>
+<hr>
+<p>Situation 2: "The Camp"</p>
+<img src="quizPics/camp.jpg" class="center">
+<p>You grow peacefully in an Orcish camp in the mountains.Its a great place where you hunt and fight with your friends.
+  A day hardly passes without a new fight between the kids.Little by little you crush everybody's skull a few times, untill they
+  start to fear you and respect you.All but one.Your best friend: Balgrub.Whataver you do he is just so massive, strong and quick that 
+  he always beats you into the dirt.</p>
+  <p class="inLine">
+      <img src="quizPics/orcCharge.jpg" width="220" style="float: right;">One day you go with Balgrub on a hunt.
+      Just the two of you in the forest.But you stray too far and you get surprised by 5 human huntsmen with their 3 dogs.
+    Fierce fighting starts all around.You slay one of the dogs very fast but your first human opponent closes on you with 2 swords.
+    The battle is very hard and bloody.You almost loose your life to him but finally you bury your great axe into his skull.You turn around
+    and see Balgrub has defeated all the rest 4 humans and the 2 dogs.It is just unbelievable.He fought like death personified and you 
+    barely killed one human and a dog.</p>
+    <p>However he is wounded.Very badly.He is unconscious and full of wounds.Suddenly an Orc warparty from the camp shows in the far distance.
+      You can quickly kill Balgrub and will be the strongest orc and get all the credit.Or you can admit what happened.What do you do?
+</p>
+<table>
+    <tr>
+      <td><button id="truth">Tell the Truth</button></td>
+      <td><button id="kill">Kill Him</button></td>
+    </tr>
+    
+</table>
+
+<p id="answer2">Answer: </p>
+
+<br><br><br><br>
+<hr>
+
+<p>Situation 3: "Battle"</p>
+<img src="quizPics/siege.png" class="center">
+
+<p>After the small battle in the forest tensions rise between orcs and humans.You dont like each other anyway, but managed to stay
+  out of each others way for some time.Usually just small groups battle here and there.But now Human insursions into Orcish lands have
+   risen exponentially.
+</p>
+<p class="inLine"><img src="quizPics/loneWarrior.jpg" width="220" style="float: right;">After another such incursion the chieftains of the nearby camps gather.They decide you have to teach the humans a lesson and gather a 
+  big war-party.You ofcourse are amongst them.About 500 orcs cross the border and attack the closest human city of Moonwatch.
+  The battle is fierce.You climb the walls with ladders and they rain arrows and stones upon you.Many of your comrades fall before
+  even reaching the wall.But orcs dont give up easily and go into a rage.
+</p>
+<p>
+  All of a sudden you find yourself on top of the wall with battle raging all around you.All of your army is behind you climbing the walls
+  and you realize you have to wait for them.With Bloodlust in your eyes you can also jump forward alone amongst the enemies.That could be
+  suicide ofcourse.So what do you do? 
+</p>
+
+<table>
+    <tr>
+      <td><button id="jump">Jump</button></td>
+      <td><button id="wait">Wait</button></td>
+    </tr>
+    
+</table>
+
+<p id="answer3">Answer: </p>
+
+<br><br><br><br>
+<hr>
+<p>Situation 4: "Captives"</p>
+<img src="quizPics/prisoners.jpg" class="center">
+<p>After the hard battle you have captured the city.Many lie dead and wounded.In their commander tower you find plans
+  of attack into your lands of a great army.Ten nearby human cities are gathering soldiers to set your lands on fire and 
+  destroy you once and for all.
+</p>
+<p>You also find that there is division amongst them.Some human commanders think there should be peace between humans and orcs.
+  You have captured around 300 prisoners.Mostly women and children but also some soldiers.Because you were first on the wall it is Orcish
+  tradition for you to decide what to do with them.
+</p>
+<p>You can kill them all.You can send all of them to the mines to work for the orcs untill they die.You can kill the men and enslave the rest,
+  to be trained as your slaves.Or you can let them go peacefully.What do you say?
+</p>
+
+<table>
+    <tr>
+      <td><button id="prisonersKill">Kill Them</button></td>
+      <td><button id="prisonersFree">Free them</button></td>
+    </tr>
+    <tr>
+      <td><button id="prisonersMines">Take them to the mines</button></td>
+      <td><button id="prisonersEnslave">Kill the men, enslave the rest</button></td>
+    </tr>
+</table>
+
+<p id="answer4">Answer: </p>
+
+<br><br><br><br>
+<hr>
+<p>Situation 5: "Challenger"</p>
+<img src="quizPics/bigOrc.png" class="center">
+
+<p>You return from the raid as a hero.Because the last chieftain of the camp has died in the battle, you are chosen as the new one.
+  You barely have gotten the position and start to enforce yourself as chieftain, when one night in the big orcish hall a huge surprise happens.
+</p>
+<p>In the middle of the feast the door opens and your old friend Balgrub enters.He has managed to survive somehow and have been 
+  wandering in distant lands since then.He has become a great warrior with scars all over his face and determination in his eyes.Many still 
+  remember his fists and the great hall goes quiet.He openly comes to you and tells you, that you are not fit to rule.He however claims
+  that it is his rightful place, as a chieftain of the camp.He says he will let you be his army commander and right hand if
+  you step down peacefully.All eyes turn to you.
+</p>
+<p>You can fight him as is orcish tradition but you know he is very strong.You can command the men to kill him, after All
+  you are commanding chieftain.You can step down and admit
+  he is better.Or you can tell the others to imprison him untill he comes to his senses.
+</p>
+
+<table>
+    <tr>
+      <td><button id="balgrubFight">Fight him</button></td>
+      <td><button id="balgrubKill">Order to be killed</button></td>
+    </tr>
+    <tr>
+      <td><button id="balgrubImprison">Imprison him</button></td>
+      <td><button id="balgrubStepDown">Step down</button></td>
+    </tr>
+</table>
+
+<p id="answer5">Answer: </p>
+
+<br><br><br><br>
+<hr>
+<p>Situation 6: "The Attack"</p>
+<img src="quizPics/cavalry.png" class="center">
+<p>
+  As you suspected not long after the battle for Moonwatch, you start getting reports of a great human army moving towards the border.Your 
+  scouts report no less then 5000 humans march on your camp.All of them well equipped and in full armor.Also 500 of them heavy knights on 
+  horses.You immidiately send word to all the nearby camps for help.Some of them answer and some dont.
+</p>
+<p class="inLine"><img src="quizPics/orcHorde2.jpg" width="30%" style="float: right;">
+  Finally the human army crosses the border.You have gathered 1500 orcs altogether.All of them bloodlusty and battle-hardened.Also 300 of them
+  are Bone Crushers.Huge crazy berserkers who go naked into battle and strike fear into enemies hearts.
+</p>
+<p>But the humans are just too many.<strong>This decision is very important for the survival of the orcs in this lands.</strong></p>
+<p>You can personally lead a head-on assault and put the berserkers in the vanguard.You hope brute Orcish strenght and bravery
+   will carry the day.Other option is for you to make an ambush.You know your mountain passes well.It will not be hard to surprise
+  the enemy in the narrow passes where numbers dont count.But many of your commanders say this strategy is cowardly.</p>
+  <p>You can also order a retreat.They are just too many.You will burn your camp and retreat to the mountains and live another day.
+    Last option is to wait for them to come and sue for peace.Enough war between Humans and Orcs.Let peace carry the day.If this fails
+    and they attack, you will defend your camp anyway.Although you will not have the element of surprise.
+  </p>
+  <p>What is your command?</p>
+
+  <table>
+      <tr>
+        <td><button id="finalAttack">Attack</button></td>
+        <td><button id="finalAmbush">Ambush</button></td>
+      </tr>
+      <tr>
+        <td><button id="finalRetreat">Retreat</button></td>
+        <td><button id="finalSuePeace">Sue for peace</button></td>
+      </tr>
+  </table>
+
+  <p id="answer6">Answer: </p>
+
+</div>
+<br><br>
+<hr>
+<div id="overview">
+<br><br><br><br>
+
+<p><strong>This is where you will see the end of Grub's story.Please press reveal after you have answered everything.
+</strong></p>
+<p class="center"><button id="reveal">Reveal</button></p>
+
+<br><br>
+
+    <h1>Grub the Destroyer</h1>
+    <img id='previewPic' src="orc1.jpg" height="350">
+    <p id="terrifying">Some text some text some text some text..</p>
+    <p id="class"></p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+<p>Some text some text some text some text..</p>
+
+</div>
+        
+        
+        </body>
+        <script src="script.js"></script>
+        </html>
