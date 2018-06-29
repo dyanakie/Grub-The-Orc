@@ -18,11 +18,7 @@ $('.selectable').click(function(){
    // $('#description').html($(this).attr('alt'));
 });
 
-hide();
 
-function hide(){
-    $(".hidden").toggle();
-};
 
 
 // QUIZ 1
@@ -152,7 +148,7 @@ $('#prisonersFree').click(function(){
     prisonersFree = true;
     decisions[3] = true;
     
-    document.querySelector("#answer4").innerHTML = "Answer: In an act of great mercy you let them go.They cant believe and thank you with tears in their eyes.";
+    document.querySelector("#answer4").innerHTML = "Answer: In an act of great mercy you let them go.They can't believe what you just did and thank you with tears in their eyes.";
 
 });
 

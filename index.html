@@ -30,7 +30,7 @@
                       <div class="intro" id="intro">
                         <br>
                       <h1>Welcome to Grub the Orc Webpage</h1>
-                      <img src="orc1.jpg" height="350">
+                      <img src="orcs/orc1.jpg" height="350">
 
                       <p class="textLeft">Dear Traveler thank you for coming to Grub's aid.You see Grub is 
                         battle-hardened and bloodlusty.All around a great orc.But its time for elections and Grub is trying to unite the orcish
@@ -47,38 +47,41 @@
                         </strong> which will decide if he will be taken or not.He may also earn Nicknames from his actions.As always luck also
                         plays a part.
                       </p>
-                      <p>Scroll down</p>
+                      <a href="#picture"><img src="Buttons/start2.png" height="120" id="showPictures"></a>
 
                       </div>
                       
 
 
                   
-<br><br><br><br>
-<hr>
-<div id="picture">
+
+<div id="picture" class="hidden">
+    <br><br><br><br>
+    <hr>
   <br><br>
   <h2>Here you must choose Grub's face:</h2>
 
 
-  <span><img id='chosenOne' src="orc1.jpg" height="360"></span>
+  <span><img id='chosenOne' src="orcs/orc1.jpg" height="360"></span>
 
-  <p><img src="orc1.jpg" class="selectable"  width="120">
-    <img src="orc2.jpg" class="selectable" width="120">
-    <img src="orc3.jpg" class="selectable" width="120">
-    <img src="orc4.jpg" class="selectable" width="120"></p>
-    <p><img src="orc5.jpg" class="selectable" width="120">
-      <img src="orc6.jpg" class="selectable" width="120">
-      <img src="orc7.jpg" class="selectable" width="120">
-      <img src="orc8.jpg" class="selectable" width="120">
-      <img src="orc9.jpg" class="selectable" width="120"></p>
+  <p><img src="orcs/orc1.jpg" class="selectable"  width="120">
+    <img src="orcs/orc2.jpg" class="selectable" width="120">
+    <img src="orcs/orc3.jpg" class="selectable" width="120">
+    <img src="orcs/orc4.jpg" class="selectable" width="120"></p>
+    <p><img src="orcs/orc5.jpg" class="selectable" width="120">
+      <img src="orcs/orc6.jpg" class="selectable" width="120">
+      <img src="orcs/orc7.jpg" class="selectable" width="120">
+      <img src="orcs/orc8.jpg" class="selectable" width="120">
+      <img src="orcs/orc9.jpg" class="selectable" width="120"></p>
 
 
-
+      <br><br>
+      <a href="#quiz1"><img src="Buttons/next.png" id="showQuiz1" height="120"></a>
 </div>
 <br><br><br><br><br>
 
 <div id="quiz">
+  <div id="quiz1" class="hidden">
   <br><br>
   <h1>Story Section</h1>
 <p>Here you will have to react to few situations, throughout Grub's life.Based on the response his Character will be determined.
@@ -108,8 +111,13 @@
 
 <p id="answer1">Answer: </p>
 
-<br><br><br><br>
-<hr>
+<br><br> <a href="#quiz2"><img src="Buttons/next.png" id="showQuiz2" class="nextButton" height="120"></a>
+</div>
+
+
+<div id="quiz2" class="hidden">
+    <br><br><br><br>
+    <hr>
 <p>Situation 2: "The Camp"</p>
 <img src="quizPics/camp.jpg" class="center">
 <p>You grow peacefully in an Orcish camp in the mountains.Its a great place where you hunt and fight with your friends.
@@ -136,9 +144,14 @@
 
 <p id="answer2">Answer: </p>
 
-<br><br><br><br>
-<hr>
+<br><br> <a href="#quiz3"><img src="Buttons/next.png" id="showQuiz3" class="nextButton" height="120"></a>
 
+</div>
+
+
+<div id="quiz3" class="hidden">
+    <br><br><br><br>
+    <hr>
 <p>Situation 3: "The Battle of Moonwatch"</p>
 <img src="quizPics/siege.png" class="center">
 
@@ -167,6 +180,12 @@
 
 <p id="answer3">Answer: </p>
 
+<br><br> <a href="#quiz4"><img src="Buttons/next.png" id="showQuiz4" class="nextButton" height="120"></a>
+
+</div>
+
+
+<div id="quiz4" class="hidden">
 <br><br><br><br>
 <hr>
 <p>Situation 4: "Captives"</p>
@@ -196,6 +215,12 @@
 
 <p id="answer4">Answer: </p>
 
+<br><br> <a href="#quiz5"><img src="Buttons/next.png" id="showQuiz5" class="nextButton" height="120"></a>
+
+</div>
+
+
+<div id="quiz5" class="hidden">
 <br><br><br><br>
 <hr>
 <p>Situation 5: "Challenger"</p>
@@ -228,6 +253,12 @@
 
 <p id="answer5">Answer: </p>
 
+<br><br> <a href="#quiz6"><img src="Buttons/next.png" id="showQuiz6" class="nextButton" height="120"></a>
+
+</div>
+
+
+<div id="quiz6" class="hidden">
 <br><br><br><br>
 <hr>
 <p>Situation 6: "The Battle of Orzammar"</p>
@@ -265,11 +296,16 @@ that they will uncover the ambush and you will pay dearly.</p>
 
   <p id="answer6">Answer: </p>
 
-</div>
-<br><br>
-<hr>
+  <br><br> <a href="#tavern"><img src="Buttons/next.png" id="showTavern" class="nextButton" height="120"></a>
 
-<div id="tavern">
+  </div>
+
+</div>
+
+
+<div id="tavern" class="hidden">
+    <br><br>
+    <hr>
   <br>
   <h1>The Tavern</h1>
     <img src="girls/tavern.jpg">
@@ -282,10 +318,14 @@ that they will uncover the ambush and you will pay dearly.</p>
   <a href="#wifeCenter"><img src="girls/dice.jpeg" height="420" id="wife"></a>
   <p id="wifeInfo"></p>
   <p id="wifeInfo2"></p>
+
+  <br><br> <a href="#overview"><img src="Buttons/next.png" id="showOverview" class="nextButton" height="120"></a>
+
 </div>
 
+
 <hr>
-<div id="overview">
+<div id="overview" class="hidden">
 <br><br><br><br>
 
 <p><strong>This is where you will see the end of Grub's story.Please press reveal after you have answered everything.
@@ -326,5 +366,6 @@ that they will uncover the ambush and you will pay dearly.</p>
         
         
         </body>
-        <script src="script.js"></script>
+        <script type='text/javascript' src="script.js"></script>
+        <script type='text/javascript' src="hidden.js"></script>
         </html>
