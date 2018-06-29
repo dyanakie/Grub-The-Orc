@@ -4,7 +4,7 @@ var chieftain = false;
 var boneCrusher = false;
 var hunter = false;
 
-var decisions = [6];
+var decisions = [7];
 
 for(var i = 0; i < decisions.length; i++){
     decisions[i] = false;
@@ -281,6 +281,73 @@ $('#balgrubStepDown').click(function(){
    });
 
 
+
+   // TAVERN
+
+   var wifeChosen = false;
+
+   $("#wife").click(function(){
+
+    if(wifeChosen){
+        return;
+    }
+
+    var number = Math.floor(Math.random()*8);
+    wifeChosen = true;
+    decisions[6] = true;
+
+    switch(number){
+
+        case 0:
+              $('#wife').attr('src', "girls/girl1.jpg");
+              document.querySelector('#wifeInfo').innerHTML = "Margaroth The Warrior";
+              document.querySelector('#wifeInfo2').innerHTML = "A soldier Orca from the warrior cast.Full of scars,brave and loyal.A good fit for you!";
+              break;
+
+        case 1:
+              $('#wife').attr('src', "girls/girl2.jpg");
+              document.querySelector('#wifeInfo').innerHTML = "Inga The Slut";
+              document.querySelector('#wifeInfo2').innerHTML = "A waitress from the Tavern.She has been through half the camp's orcs.But boy is she wild in bed.Very wild!";
+              break;
+        case 2:
+              $('#wife').attr('src', "girls/girl3.jpg");
+              document.querySelector('#wifeInfo').innerHTML = "Grubra the Berserker";
+              document.querySelector('#wifeInfo2').innerHTML = "A strong Orca from the Bone Crusher caste.Her muscles are almost as much as yours.A good choice, just dont cheat on her!";    
+              break;
+        case 3:
+              $('#wife').attr('src', "girls/girl4.jpg");  
+              document.querySelector('#wifeInfo').innerHTML = "Bilgob the Crazy";
+              document.querySelector('#wifeInfo2').innerHTML = "The most brutal Orcish assasin there is.Everybody fears her, as she is a great warrior and unscrupolous killer.But in bed she is softer than a human!";
+              break;
+        case 4:
+              $('#wife').attr('src', "girls/girl5.jpg");   
+              document.querySelector('#wifeInfo').innerHTML = "Obra the Witch";
+              document.querySelector('#wifeInfo2').innerHTML = "She is the local Shaman's daughter.A dangerous and dark Orca.Many fear her magic and special skills.Has she made you drink a potion?";
+              break;
+        case 5:   
+              $('#wife').attr('src', "girls/girl6.jpg");
+              document.querySelector('#wifeInfo').innerHTML = "Brungo the Gifted";
+              document.querySelector('#wifeInfo2').innerHTML = "Well...A heart wants what a heart wants.Brungo is not called the gifted for nothing!";
+              break;
+        case 6:   
+              $('#wife').attr('src', "girls/girl7.jpg");
+              document.querySelector('#wifeInfo').innerHTML = "Nimitz the Romantic";
+              document.querySelector('#wifeInfo2').innerHTML = "A simple Orca from the Hunter caste.She is romantic and loyal.A truly good wife for a strong Orc!";
+              break;
+        case 7:   
+              $('#wife').attr('src', "girls/girl8.jpg");
+              document.querySelector('#wifeInfo').innerHTML = "Mildred the Ugly";
+              document.querySelector('#wifeInfo2').innerHTML = "You will have to break many Orcish heads because of laughs behind your back.She may not be so pretty but she is your little sugar tootsie roll!";
+              break;
+
+
+
+    }
+
+   })
+
+
+
 // Reveal
 
 document.querySelector("#terrifying").innerHTML = "Terrifying: "+terrifying;
@@ -302,10 +369,12 @@ $('#reveal').click(function(){
 
     if(!unveiled && doneAll){
          scoobyDo();
-         $(".hidden").toggle();
+         $('.hidden').toggle();
          unveiled = true;
-         $("#quiz").toggle();
+         $('#quiz').toggle();
          $("#picture").toggle();
+         $('#intro').toggle();
+         $('#tavern').toggle();
     }
 
 });
@@ -315,6 +384,8 @@ function scoobyDo(){
 var strenght = 0;
 var prestige = 0;
 var terrible = 0;
+// $(".hidden h1").append("<p>Grub the Mountain Lord</p>");
+
 }
 
 

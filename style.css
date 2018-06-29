@@ -12,6 +12,23 @@
     
 }
 
+#tavern{
+    text-align: center;
+    font-size: 32px;
+}
+
+#wifeInfo{
+    text-align: center;
+}
+
+#tavern .left{
+    text-align: left;
+    
+}
+
+
+
+
 #overview p{
     font-size: 28px;
 }
