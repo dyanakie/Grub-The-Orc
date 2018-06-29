@@ -12,6 +12,12 @@
     
 }
 
+#epilogue{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 #tavern{
     text-align: center;
     font-size: 32px;

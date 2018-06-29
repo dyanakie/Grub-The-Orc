@@ -1,10 +1,15 @@
 
 
 hide();
+hideEpilogue();
 
-/* function hide(){
+function hideEpilogue(){
+    $("#epilogue").toggle();
+};
+
+ function hide(){
     $(".hidden").toggle();
-}; */
+}; 
 
 $('#showPictures').click(function(){
     
