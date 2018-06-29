@@ -2,9 +2,9 @@
 
 hide();
 
-function hide(){
+/* function hide(){
     $(".hidden").toggle();
-};
+}; */
 
 $('#showPictures').click(function(){
     

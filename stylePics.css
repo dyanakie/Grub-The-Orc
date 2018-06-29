@@ -1,4 +1,11 @@
 
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
 
 #quiz span{
 
