@@ -10,30 +10,16 @@ $('#refresh').click(function() {
 $('.selectable').click(function(){
     $('#chosenOne').attr('src',$(this).attr('src'));
     $('#previewPic').attr('src',$(this).attr('src'));
-    terrifying = terrifying+1;
 
 });
 
+/* wow();
 
-    // run the currently selected effect
-    function runEffect() {
-        
-      // get effect type from
-      var selectedEffect = 'fade';
- 
-      // Most effect types need no options passed by default
-      var options = {};
-      // some effects have required parameters
-      if ( selectedEffect === "scale" ) {
-        options = { percent: 50 };
-      } else if ( selectedEffect === "size" ) {
-        options = { to: { width: 200, height: 60 } };
-      }
- 
-      // Run the effect
-      $( this ).toggle( selectedEffect, options, 500 );
-    };
-
+function wow(){
+    $('#endingPic').attr('src', 'ending/chieftainOfChieftains.jpg');
+    document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: CHIEFTAIN OF CHIEFTAINS (FULL VICTORY)";
+    document.querySelector('#endingText').innerHTML = "You did it!AFter your crushing victory all the nearby tribes joined you.Those who didn't met with the same fate as the humans.Far and wide messengers hurry to bring the news.The Orc's have a King and his name is Grub the Great!The world should tremble!"
+} */
 
 
 
@@ -67,10 +53,13 @@ $('#reveal').click(function(){
         
 });
 
+$('#howToPlay').click(function(){
+alert('The Story unfolds chapter by chapter.\n\nTo start, just click the arrow on the bottom of the page and go through the story.After every chapter, make your choice and click the arrow again for the next chapter to be shown.\n\n At the end, click reveal to see how all ends.');
+});
+
+
 
 // Reveal Chapter
-
-// document.querySelector("#terrifying").innerHTML = "Terrifying: "+terrifying;
 
 var unveiled = false;
 
@@ -91,6 +80,7 @@ var banished = false;
 var dead = false;
 var battleWon = false;
 var peaceMade = false;
+var secondMan = false;
 
 
 // CALCULATE ENDING
@@ -108,6 +98,7 @@ calculatePoints();
 document.querySelector("#endingTitle").innerHTML = 'Grub '+titleEarned;        //The Title he earned
 balgrubFuture();
 orcsHumansFate();
+finalEnding();
 
 
 }
@@ -145,6 +136,7 @@ function balgrubFuture(){
         }
         if(chance < 5){
         document.querySelector('#balgrubsFate').innerHTML = 'Balgrubs fate: After you stepped down, as chieftain Balgrub has required your counsil in every matter.Ofcourse you will always be the weaker one but second place is not so bad.Not at all when the first is Balgrub the Mighty.';
+        secondMan = true;
         }
     }
 
@@ -176,6 +168,60 @@ function orcsHumansFate(){                    // in Calculations
         }
 
     }
+
+}
+
+function finalEnding(){
+
+    if(dead){
+        return;
+    }else if(banished){
+      $('#endingPic').attr('src', 'ending/banished.jpg');
+      document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: YOU HAVE BEEN BANISHED";
+      document.querySelector('#endingText').innerHTML = "You have been banished from orcish territory.You pack your things and wonder off alone.You travel far beyond the known lands.You adventures have just begun but that is another story.You have no idea what happened to the orcs home and Balgrub but may be one day you will find out.";
+    }else if(secondMan){
+      $('#endingPic').attr('src', 'ending/secondMan.jpg');
+      document.querySelector('#endingTitle').innerHTML = "YOUR FATE: YOU ARE BALGRUBS FIRST COMMANDER";
+      document.querySelector('#endingTextTitle').innerHTML = "Your loyal actions and the love of your friend and comrade Balgrub, had put you at the head of the Orc army as his most trusted friend and adviser.No wonder many conquests and battles lay ahead.And you will always be by your friend.Second in command.";
+
+    }else if(peaceMade){
+
+       $('#endingPic').attr('src', 'ending/peace.jpg');
+       document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: FIRST PEACEFUL ORC CHIEFTAIN (HALF-VICTORY)";
+       document.querySelector('#endingText').innerHTML = "Your actions have brought peace unto this land.You have put an end to the hostilites between orcs and humans.At least for now.Other orc rulers find you weak, because of this.Even some of your own orcs.However long you rule, it will be in peace.But there is not doubt, that what you have achieved is incredible."; 
+
+    }else if(battleWon){
+
+        battleWonEnding();
+
+    }
+
+
+}
+
+function battleWonEnding(){
+
+    if(titleEarned === 'The Cunning Overlord'){
+        var chance = Math.random()*10;
+
+
+        if(chance > 5){
+            $('#endingPic').attr('src', 'ending/chieftainOfChieftains.jpg');
+            document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: CHIEFTAIN OF CHIEFTAINS (FULL VICTORY)";
+            document.querySelector('#endingText').innerHTML = "You did it!After your crushing victory all the nearby tribes joined you.Those who didn't met with the same fate as the humans.Far and wide messengers hurry to bring the news.For the first time in history the Orc's have a King and his name is Grub the Great!The world should tremble!"
+        }else{
+            $('#endingPic').attr('src', 'ending/chieftain.jpg');
+            document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: CHIEFTAIN (HALF VICTORY)";
+            document.querySelector('#endingText').innerHTML = "You did it!AFter your victory over the humans other villages joined you.You are now Chieftain of a very big Orcish dominion.Human and orcs tremble of your name!There are however those that oppose you.Other chieftains.But it is no small achievement what you did!";
+        }
+
+    }else{
+        $('#endingPic').attr('src', 'ending/chieftain.jpg');
+            document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: CHIEFTAIN (HALF VICTORY)";
+            document.querySelector('#endingText').innerHTML = "You did it!After your victory over the humans other villages joined you.Word has spread of you far and wide.You are now Chieftain of a very big Orcish dominion.Human and orcs tremble of your name!There are however those that oppose you.Other chieftains.But their turn will come too.Mighty Grub doesn't forget!";
+    }
+
+
 
 }
 

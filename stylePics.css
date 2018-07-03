@@ -6,6 +6,7 @@
 }
 
 .floatLeft{
+    margin: 20px;
     float: left;
 }
 
@@ -27,6 +28,12 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+#picture{
+    align-content: center;
+    text-align: center;
+    
 }
 
 
