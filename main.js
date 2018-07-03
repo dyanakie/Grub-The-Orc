@@ -45,10 +45,7 @@ $('#reveal').click(function(){
          $('#epilogue').toggle();
          $('#intro').toggle();
          unveiled = true;
-         /* $('#quiz').toggle();
-         $("#picture").toggle();
-         $('#intro').toggle();
-         $('#tavern').toggle(); */
+         
     }
         
 });
@@ -104,43 +101,6 @@ finalEnding();
 }
 
 
-
-
-function balgrubFuture(){
-
-    if(balgrubFight || balgrubKill){
-
-        document.querySelector('#balgrubsFate').innerHTML = "Balgrubs fate: Since you have killed your best friend Balgrub, sometimes he comes to you at night in your dreams.You talk and hunt as you used to when you were little."
-
-    }
-
-    if(balgrubImprison){
-
-        var chance = Math.random()*10;
-
-        if(chance >= 5){
-        document.querySelector('#balgrubsFate').innerHTML = 'Balgrubs fate: After you imprisoned your best friend Balgrub, you start to visit him more and more often.He convinces you he is sorry and the end you set him free.Not long after that he murders the guards and murders you in your sleep.';
-        dead = true;
-        }
-        if(chance < 5){
-        document.querySelector('#balgrubsFate').innerHTML = 'Balgrubs fate: After you imprisoned your best friend Balgrub, you start to visit him more and more often.He is truly sorry about what he did so you set him free.Nothing can separate you again now.';
-        }
-    }
-
-    if(balgrubStepDown){
-        var chance = Math.random()*10;
-
-        if(chance >= 5){
-        document.querySelector('#balgrubsFate').innerHTML = 'Balgrubs fate: After you stepped down, as chieftain Balgrub has become more and more distant.He considers you weak now and finally the day comes when he banishes you from the land.Only out of sweet memmory he lets you live.';
-        banished = true;
-        }
-        if(chance < 5){
-        document.querySelector('#balgrubsFate').innerHTML = 'Balgrubs fate: After you stepped down, as chieftain Balgrub has required your counsil in every matter.Ofcourse you will always be the weaker one but second place is not so bad.Not at all when the first is Balgrub the Mighty.';
-        secondMan = true;
-        }
-    }
-
-}
 
 function orcsHumansFate(){                    // in Calculations
 
