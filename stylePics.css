@@ -1,4 +1,10 @@
 
+.background1{
+    background-image: url('backgrounds/backgroundIntro.jpg');
+    background-size: 100%;
+    height: 600px;
+}
+
 .floatLeft{
     float: left;
 }
@@ -24,9 +30,8 @@
 }
 
 
-.nextButton{
-    align-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+ .nextButton:hover{
+    transform: scale(1.5);
+
+ }

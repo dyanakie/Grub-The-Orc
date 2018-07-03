@@ -1,4 +1,13 @@
 
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.background1{
+    color: gold;
+}
+
+
 #overview{
     
     text-align: center;
