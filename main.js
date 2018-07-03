@@ -3,12 +3,39 @@
 
 var unveiled = false;
 
+$('#refresh').click(function() {
+    window.location.reload();
+});
+
 $('.selectable').click(function(){
     $('#chosenOne').attr('src',$(this).attr('src'));
     $('#previewPic').attr('src',$(this).attr('src'));
     terrifying = terrifying+1;
 
 });
+
+
+    // run the currently selected effect
+    function runEffect() {
+        
+      // get effect type from
+      var selectedEffect = 'fade';
+ 
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 50 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+ 
+      // Run the effect
+      $( this ).toggle( selectedEffect, options, 500 );
+    };
+
+
+
 
 $('#reveal').click(function(){
 
