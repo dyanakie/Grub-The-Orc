@@ -13,14 +13,6 @@ $('.selectable').click(function(){
 
 });
 
-/* wow();
-
-function wow(){
-    $('#endingPic').attr('src', 'ending/chieftainOfChieftains.jpg');
-    document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: CHIEFTAIN OF CHIEFTAINS (FULL VICTORY)";
-    document.querySelector('#endingText').innerHTML = "You did it!AFter your crushing victory all the nearby tribes joined you.Those who didn't met with the same fate as the humans.Far and wide messengers hurry to bring the news.The Orc's have a King and his name is Grub the Great!The world should tremble!"
-} */
-
 
 
 $('#reveal').click(function(){
@@ -35,8 +27,6 @@ $('#reveal').click(function(){
             break;
         }
     }
-
-   // var doneAll = true;
 
     if(!unveiled && doneAll){
         
@@ -85,12 +75,6 @@ var secondMan = false;
 function calculateEnding(){
 
 calculatePoints();
-//alert('bravery: '+bravery+'   terrible' + terrible+ '   cunning' + cunning);
-/* if(titleEarned === 'The Cunning Overlord'){
-    if(Math.floor(Math.random()*5) === 1){
-        titleEarned === 'The Great Chieftain of Chieftains';
-    }
-} */
 
 document.querySelector("#endingTitle").innerHTML = 'Grub '+titleEarned;        //The Title he earned
 balgrubFuture();
@@ -141,8 +125,8 @@ function finalEnding(){
       document.querySelector('#endingText').innerHTML = "You have been banished from orcish territory.You pack your things and wonder off alone.You travel far beyond the known lands.You adventures have just begun but that is another story.You have no idea what happened to the orcs home and Balgrub but may be one day you will find out.";
     }else if(secondMan){
       $('#endingPic').attr('src', 'ending/secondMan.jpg');
-      document.querySelector('#endingTitle').innerHTML = "YOUR FATE: YOU ARE BALGRUBS FIRST COMMANDER";
-      document.querySelector('#endingTextTitle').innerHTML = "Your loyal actions and the love of your friend and comrade Balgrub, had put you at the head of the Orc army as his most trusted friend and adviser.No wonder many conquests and battles lay ahead.And you will always be by your friend.Second in command.";
+      document.querySelector('#endingTextTitle').innerHTML = "YOUR FATE: YOU ARE BALGRUBS FIRST COMMANDER";
+      document.querySelector('#endingText').innerHTML = "Your loyal actions and the love of your friend and comrade Balgrub, had put you at the head of the Orc army as his most trusted friend and adviser.No wonder many conquests and battles lay ahead.And you will always be by your friend.Second in command.";
 
     }else if(peaceMade){
 

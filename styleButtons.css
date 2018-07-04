@@ -1,4 +1,8 @@
 
+.nextButton:hover{
+  transform: scale(1.5);
+
+}
 
 .nextButton{
   text-align: center;
@@ -26,7 +30,7 @@
 
 button{
     
-   width: 70%;
+    width: 70%;
     background:rgb(41, 44, 43);
     color:#fff;
     border:none;

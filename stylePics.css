@@ -1,6 +1,7 @@
 
 .background1{
     background-image: url('backgrounds/backgroundIntro.jpg');
+    background-repeat: no-repeat;
     background-size: 100%;
     height: 600px;
 }
@@ -38,7 +39,4 @@
 
 
 
- .nextButton:hover{
-    transform: scale(1.5);
-
- }
+ 
