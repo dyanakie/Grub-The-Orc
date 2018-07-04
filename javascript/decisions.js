@@ -283,50 +283,50 @@ $('#balgrubStepDown').click(function(){
     switch(number){
 
         case 0:
-              $('#wife').attr('src', "girls/girl1.jpg");
+              $('#wife').attr('src', "resources/girls/girl1.jpg");
               wifeName = 'Margaroth';
               document.querySelector('#wifeInfo').innerHTML = "Margaroth The Warrior";
               document.querySelector('#wifeInfo2').innerHTML = "A soldier Orca from the warrior cast.Full of scars,brave and loyal.A good fit for you!";
               break;
 
         case 1:
-              $('#wife').attr('src', "girls/girl2.jpg");
+              $('#wife').attr('src', "resources/girls/girl2.jpg");
               wifeName = 'Inga';
               document.querySelector('#wifeInfo').innerHTML = "Inga The Slut";
               document.querySelector('#wifeInfo2').innerHTML = "A waitress from the Tavern.She has been through half the camp's orcs.But boy is she wild in bed.Very wild!";
               break;
         case 2:
-              $('#wife').attr('src', "girls/girl3.jpg");
+              $('#wife').attr('src', "resources/girls/girl3.jpg");
               wifeName = 'Grubra';
               document.querySelector('#wifeInfo').innerHTML = "Grubra the Berserker";
               document.querySelector('#wifeInfo2').innerHTML = "A strong Orca from the Bone Crusher caste.Her muscles are almost as big as yours.A good choice, just dont cheat on her!";    
               break;
         case 3:
-              $('#wife').attr('src', "girls/girl4.jpg");  
+              $('#wife').attr('src', "resources/girls/girl4.jpg");  
               wifeName = 'Bilgob';
               document.querySelector('#wifeInfo').innerHTML = "Bilgob the Crazy";
               document.querySelector('#wifeInfo2').innerHTML = "The most brutal Orcish assasin there is.Everybody fears her, as she is a great warrior and unscrupolous killer.But in bed she is softer than a human!";
               break;
         case 4:
-              $('#wife').attr('src', "girls/girl5.jpg");   
+              $('#wife').attr('src', "resources/girls/girl5.jpg");   
               wifeName = 'Obra';
               document.querySelector('#wifeInfo').innerHTML = "Obra the Witch";
               document.querySelector('#wifeInfo2').innerHTML = "She is the local Shaman's daughter.A dangerous and dark Orca.Many fear her magic and special skills.Has she made you drink a potion?";
               break;
         case 5:   
-              $('#wife').attr('src', "girls/girl6.jpg");
+              $('#wife').attr('src', "resources/girls/girl6.jpg");
               wifeName = 'Brungo';
               document.querySelector('#wifeInfo').innerHTML = "Brungo the Gifted";
               document.querySelector('#wifeInfo2').innerHTML = "Well...A heart wants what a heart wants.Brungo is not called the gifted for nothing!";
               break;
         case 6:   
-              $('#wife').attr('src', "girls/girl7.jpg");
+              $('#wife').attr('src', "resources/girls/girl7.jpg");
               wifeName = 'Nimitz';
               document.querySelector('#wifeInfo').innerHTML = "Nimitz the Romantic";
               document.querySelector('#wifeInfo2').innerHTML = "A simple Orca from the Hunter caste.She is romantic and loyal.A truly good wife for a strong Orc!";
               break;
         case 7:   
-              $('#wife').attr('src', "girls/girl8.jpg");
+              $('#wife').attr('src', "resources/girls/girl8.jpg");
               wifeName = 'Mildred';
               document.querySelector('#wifeInfo').innerHTML = "Mildred the Ugly";
               document.querySelector('#wifeInfo2').innerHTML = "You will have to break many Orcish heads because of laughs behind your back.She may not be so pretty but she is your little sugar tootsie roll!";
