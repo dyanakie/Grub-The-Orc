@@ -1,11 +1,12 @@
 
-//Choose pic
 
 var unveiled = false;
 
 $('#refresh').click(function() {
     window.location.reload();
 });
+
+//choose pic
 
 $('.selectable').click(function(){
     $('#chosenOne').attr('src',$(this).attr('src'));
