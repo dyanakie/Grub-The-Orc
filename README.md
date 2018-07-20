@@ -3,4 +3,6 @@ An interactive One-Pager website made for training purposes.It was made in Teler
 
 This is a web-page-game that has multiple endings depending on your choices.More than 12 endings are possible.
 
+https://dyanakie.github.io/Grub-the-Orc/
+
 Coding and story made by Dragomir Yanakiev
